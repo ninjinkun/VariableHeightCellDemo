@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FullAutoLayoutCell" rowHeight="99" id="31W-sM-azF" customClass="FullAutoLayoutCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="31W-sM-azF" id="cXc-FJ-pQU">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4v-22-rkk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="NCu-Zd-JnR" userLabel="Name Label">
+                                <rect key="frame" x="12" y="12" width="296" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="FGe-Oy-c0k" userLabel="Description Label">
+                                <rect key="frame" x="12" y="45" width="296" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="Hjk-LS-TIo" userLabel="Text Label">
+                                <rect key="frame" x="12" y="71" width="296" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FGe-Oy-c0k" firstAttribute="top" secondItem="NCu-Zd-JnR" secondAttribute="bottom" constant="12" id="7KP-ZV-8tl"/>
+                            <constraint firstItem="FGe-Oy-c0k" firstAttribute="leading" secondItem="Hjk-LS-TIo" secondAttribute="leading" id="8gQ-ey-nGz"/>
+                            <constraint firstItem="FGe-Oy-c0k" firstAttribute="trailing" secondItem="Hjk-LS-TIo" secondAttribute="trailing" id="9Xl-Nm-cCm"/>
+                            <constraint firstItem="Hjk-LS-TIo" firstAttribute="top" secondItem="FGe-Oy-c0k" secondAttribute="bottom" constant="12" id="F7Q-Id-bzR"/>
+                            <constraint firstItem="FGe-Oy-c0k" firstAttribute="trailing" secondItem="NCu-Zd-JnR" secondAttribute="trailing" id="GUl-1S-cWT"/>
+                            <constraint firstItem="NCu-Zd-JnR" firstAttribute="leading" secondItem="J4v-22-rkk" secondAttribute="leading" constant="12" id="Gl6-Zs-x6O"/>
+                            <constraint firstItem="NCu-Zd-JnR" firstAttribute="top" secondItem="J4v-22-rkk" secondAttribute="top" constant="12" id="rN6-o2-nvL"/>
+                            <constraint firstItem="FGe-Oy-c0k" firstAttribute="leading" secondItem="NCu-Zd-JnR" secondAttribute="leading" id="tWa-Kw-e4A"/>
+                            <constraint firstAttribute="bottom" secondItem="Hjk-LS-TIo" secondAttribute="bottom" constant="12" id="vpM-Gs-6AJ"/>
+                            <constraint firstAttribute="trailing" secondItem="NCu-Zd-JnR" secondAttribute="trailing" constant="12" id="w8r-rP-JF7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J4v-22-rkk" firstAttribute="top" secondItem="cXc-FJ-pQU" secondAttribute="top" id="SRR-LU-Uwf"/>
+                    <constraint firstItem="J4v-22-rkk" firstAttribute="leading" secondItem="cXc-FJ-pQU" secondAttribute="leading" id="ibl-JO-RjZ"/>
+                    <constraint firstAttribute="trailing" secondItem="J4v-22-rkk" secondAttribute="trailing" id="na2-5n-9RO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="baseView" destination="J4v-22-rkk" id="9mm-I8-of4"/>
+                <outlet property="nameLabel" destination="NCu-Zd-JnR" id="7PV-Py-GmR"/>
+                <outlet property="statusLabel" destination="Hjk-LS-TIo" id="ftB-dS-IRp"/>
+                <outlet property="userDescriptionLabel" destination="FGe-Oy-c0k" id="ioV-GD-1sQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

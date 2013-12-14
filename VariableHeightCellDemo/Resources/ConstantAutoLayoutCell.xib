@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConstantAutoLayoutCell" rowHeight="102" id="dZh-W3-tAD" customClass="ConstantAutoLayoutCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dZh-W3-tAD" id="4uK-pu-APy">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="yZ7-Yo-fa9" userLabel="Name Label">
+                        <rect key="frame" x="12" y="12" width="296" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="VHj-Jo-eua" userLabel="Description Label">
+                        <rect key="frame" x="12" y="45" width="296" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-S0-88i" userLabel="Text Label">
+                        <rect key="frame" x="12" y="71" width="296" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="yZ7-Yo-fa9" secondAttribute="trailing" constant="12" id="4OZ-It-fhG"/>
+                    <constraint firstItem="Pdc-S0-88i" firstAttribute="top" secondItem="VHj-Jo-eua" secondAttribute="bottom" constant="12" id="Aeu-79-ni0"/>
+                    <constraint firstItem="Pdc-S0-88i" firstAttribute="leading" secondItem="yZ7-Yo-fa9" secondAttribute="leading" id="BTV-nf-lu5"/>
+                    <constraint firstItem="yZ7-Yo-fa9" firstAttribute="leading" secondItem="4uK-pu-APy" secondAttribute="leading" constant="12" id="DIS-Cr-9Nh"/>
+                    <constraint firstItem="VHj-Jo-eua" firstAttribute="top" secondItem="yZ7-Yo-fa9" secondAttribute="bottom" constant="12" id="FdJ-4f-WMH"/>
+                    <constraint firstItem="Pdc-S0-88i" firstAttribute="leading" secondItem="VHj-Jo-eua" secondAttribute="leading" id="Z4y-yF-SC2"/>
+                    <constraint firstItem="yZ7-Yo-fa9" firstAttribute="trailing" secondItem="VHj-Jo-eua" secondAttribute="trailing" id="adx-6b-7NJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Pdc-S0-88i" secondAttribute="bottom" priority="103" constant="12" id="fz7-vU-D0B"/>
+                    <constraint firstItem="yZ7-Yo-fa9" firstAttribute="trailing" secondItem="Pdc-S0-88i" secondAttribute="trailing" id="qLW-hL-DXZ"/>
+                    <constraint firstItem="yZ7-Yo-fa9" firstAttribute="top" secondItem="4uK-pu-APy" secondAttribute="top" constant="12" id="ttU-zO-hvr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomConstraint" destination="fz7-vU-D0B" id="yCr-eg-od3"/>
+                <outlet property="nameLabel" destination="yZ7-Yo-fa9" id="LKT-RH-8dc"/>
+                <outlet property="nameUserDescriptionConstraint" destination="FdJ-4f-WMH" id="HkH-Ah-BuJ"/>
+                <outlet property="statusLabel" destination="Pdc-S0-88i" id="TGU-OJ-ZvS"/>
+                <outlet property="topConstraint" destination="ttU-zO-hvr" id="h4b-bF-8hq"/>
+                <outlet property="userDescriptionLabel" destination="VHj-Jo-eua" id="zbr-xz-EsK"/>
+                <outlet property="userDescriptionStatusConstraint" destination="Aeu-79-ni0" id="UTu-DD-BXa"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
